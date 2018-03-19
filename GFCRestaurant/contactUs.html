@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			table, th, td {
+				border: 1px solid #292533; /*pavement behaviour by autopsyturvy - colourlovers.com */
+				padding: 5px 10px 5px 10px; /*top right bottom left */
+				border-spacing: 2px 5px; /* you can do this with padding, too - tob/bottom * right/left */
+			}
+			
+			table {
+				width: 100%;
+			}
+			
+			td, th {
+				height: 30px;
+			}
+			
+			th {
+				background-color: #5b7d87; /*hush by oblibious - colourlovers.com */
+				color: white;
+			}
+			
+			tr:nth-child(odd) {
+				background-color: #d5d2cb; /* in flowers by kinkajou888 - colourlovers.com */
+			}
+					
+		</style>
+
+</head>
+<body>
+
+	<div id="title">
+		<h1>GetYerGrubOn</h1>
+	</div>
+	
+	<div id="navigation">
+		<hr />
+		<!--The links we'll need are: Indexl, menu, and contactUs-->
+		<p><a href="Index.html" target="_blank">Home</a>
+		<a href="menu.html" target="_blank">Menu</a>
+		<a href="contactUs.html" target="_blank">Contact Us</a></p>
+		<hr />
+	</div>
+	
+
+	<form action="submit.html" method = "POST">
+	
+	<label for="firstName">Name:</Label>
+	<input type="text" id="name" name="name"><br />
+	<label for="email">Email:</Label>
+	<input type="text" id="email" name="email"><br />	
+	<label for="phone">Phone:</Label>
+	<input type="text" id="phone" name="phone"><br />
+	<br/>
+	<label for="reason">Reason for Inquiry:</Label>
+	<select id="reason" name="reason">
+		<option value="catering" selected>Catering</option>
+		<option value="privateParty">Private Party</option>
+		<option value="feedback">Feedback</option>
+		<option value="other">Other</option>
+	</select>
+	
+	<br/><br/>
+	
+	<label for="info">Additional Information:</label>
+	<textarea id="info"></textarea>
+	
+	<br /><br />
+	
+	<fieldset>
+		<legend>Have you been to the restaurant?</legend>
+		<input type="radio" id="notBeen" name="notBeen" value="no" checked="checked">
+		<label for="notBeen">No</label>
+		<input type="radio" id="been" name="been" value="yes">
+		<label for="been">Yes</label>
+	</fieldset>
+	
+	<br />
+	
+	<fieldset>
+		<legend>Best days to contact you:</legend>
+		<input type="checkbox" id="M" name="M" value="M">
+		<label for="M">M</label>
+		<input type="checkbox" id="T" name="T" value="T">
+		<label for="T">T</label>
+		<input type="checkbox" id="W" name="W" value="W">
+		<label for="W">W</label>
+		<input type="checkbox" id="Th" name="Th" value="Th">
+		<label for="Th">Th</label>
+		<input type="checkbox" id="F" name="F" value="F">
+		<label for="F">F</label>
+	</fieldset>
+	
+	<br />
+	
+	
+	<input type="submit" name="submit" value="Send Request">
+	
+</body>
+
+	<div id="footer">
+	<hr />
+	<footer>
+		<p style='text-align:center'>123 Main, Anytown, WA 98123</p>
+		<p style='text-align:center'>206.555.1234</p>
+	</footer>
+	</div>
+</html>
